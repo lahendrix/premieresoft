@@ -1,0 +1,130 @@
+@import "src/theme/theme-variables";
+
+@keyframes rotateIn{
+  0%{
+    transform-origin:center center;
+    transform:rotate(-200deg);
+    opacity:0
+  }
+  100%{
+    transform-origin:center center;
+    transform:rotate(0);
+    opacity:1
+  }
+}
+
+.social-buttons {
+  background-color: #1e5182;
+  height: 40px;
+
+  a {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-left: 1px solid rgba(256,256,256, 0.10);
+
+    &:last-child {
+      border-right: 1px solid rgba(256,256,256, 0.10);
+    }
+
+    &:hover {
+      color: red;
+      background-color: white;
+      animation-name: rotateIn;
+      animation-delay: 0.1s;
+      animation-fill-mode: both;
+      animation-duration: 0.3s;
+    }
+  }
+}
+.navbar {
+  margin-bottom: 10px;//$spacer;
+}
+
+.header-contact-info {
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  line-height: 0.5rem;
+
+  .header-contact-icon {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.cradle-navbar {
+  margin-bottom: 0;
+  background-color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  min-height: 55px;
+  overflow: hidden;
+
+  .navbar-toggler {
+    background-color: #3465aa;
+  }
+
+  .nav-link {
+    color: #515659;
+    font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d33;
+      color: white;
+      margin-top: -10px;
+      padding-top: 15px;
+      margin-bottom: -10px;
+    }
+
+    &.active {
+      background-color: #d33;
+      color: white;
+      margin-top: -10px;
+      padding-top: 15px;
+      margin-bottom: -10px;
+    }
+  }
+
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  min-width: 150px;
+  display: block;
+  margin: 25px 0px 0px 0px;
+}
+
+.logo-row {
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+//@include media-breakpoint-down(sm) {
+//  .home .row-1 .carousel-img {
+//    width: initial;
+//  }
+//}
+
+
+@media (min-width: 768px) {
+  .navbar-toggleable-sm, .navbar-toggleable-sm .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}

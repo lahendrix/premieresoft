@@ -1,0 +1,65 @@
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 1rem;
+  line-height: 2rem;
+
+  span {
+    font-size: 10px;
+  }
+
+  @keyframes rotateIn{
+    0%{
+      transform-origin:center center;
+      transform:rotate(-200deg);
+      opacity:0
+    }
+    100%{
+      transform-origin:center center;
+      transform:rotate(0);
+      opacity:1
+    }
+  }
+
+  .social-buttons {
+    height: 40px;
+
+    .button-wrapper {
+      width: 260px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    h5 {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+      color: white;
+      font-size: 20px;
+      padding: 5px 15px;
+      cursor: pointer;
+
+      &:hover {
+        color: red;
+        background-color: white;
+        animation-name: rotateIn;
+        animation-delay: 0.1s;
+        animation-fill-mode: both;
+        animation-duration: 0.3s;
+      }
+    }
+  }
+}
+
+.statement-of-faith {
+  h5 {
+    font-size: 14px;
+    text-align: center;
+  }
+  p {
+    font-size: 10px;
+  }
+}

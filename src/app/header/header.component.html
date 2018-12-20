@@ -1,0 +1,67 @@
+<header>
+  <div class="container-fluid">
+    <div class="row social-buttons">
+      <div class="col-sm-6 col-md-7 col-lg-8"></div>
+      <div class="col-sm-6 col-md-5 col-lg-4">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="https://web.facebook.com/EphraimComeHome/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+        <a href="https://www.youtube.com/playlist?list=PLUsFa09OE2MsIv0AkfTZ3B8CexL-yzPWv"><i class="fa fa-youtube"></i></a>
+        <a href="mailto:cradle@jewishprophet.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="row logo-row">
+      <div class="col-sm-3">
+        <a routerLink="/home">
+          <img class="logo" src="assets/PremiereSoftwareDevelopment_CustomLogoDesign_Opt3.jpg" alt="angular logo"/>
+        </a>
+      </div>
+      <div class="col-md-3 col-lg-3 header-contact-info hidden-sm-down">
+        <div class="pull-left header-contact-icon hidden-md-down">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="pull-left">
+          <p>1505 Sagebrush Trail</p>
+          <p>Keller, TX 76248</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-lg-3 header-contact-info hidden-sm-down">
+        <div class="pull-left header-contact-icon hidden-md-down">
+          <i class="fa fa-clock-o"></i>
+        </div>
+        <div class="pull-left">
+          <p>Mon - Fri</p>
+          <p>8am - 4pm</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 header-contact-info hidden-sm-down">
+        <div class="pull-left header-contact-icon hidden-md-down">
+          <i class="fa fa-phone"></i>
+        </div>
+        <div class="pull-left">
+          <p>larry@premieresoftwaredev.com</p>
+          <p>214.336.3850</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-toggleable-sm navbar-inverse cradle-navbar">
+    <!--<button class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbar-menu"-->
+            <!--aria-label="Toggle navigation" (click)="toggleMenu()" [attr.aria-expanded]="!menuHidden">-->
+      <!--<span class="navbar-toggler-icon"></span>-->
+    <!--</button>-->
+    <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="false">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+          <span>Home</span>
+        </a>
+        <a class="nav-item nav-link text-uppercase" routerLink="/about" routerLinkActive="active">
+          <span>About Us</span>
+        </a>
+        <a class="nav-item nav-link text-uppercase" routerLink="/ministry" routerLinkActive="active">
+          <span>Services</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

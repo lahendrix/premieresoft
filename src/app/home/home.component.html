@@ -1,0 +1,225 @@
+<div class="container-fluid home">
+  <div class="row hidden-sm-down">
+    <div class="col-sm-12">
+      <ngb-carousel>
+        <ng-template ngbSlide>
+          <img src="assets/banner3.png" alt="Programming Hand">
+          <div class="carousel-caption">
+            <div class="col-sm-offset-1 col-sm-10 carousel-call-to-action">
+            </div>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <img src="assets/banner2.png" alt="Random second slide">
+          <div class="carousel-caption">
+            <div class="col-sm-offset-1 col-sm-10 carousel-call-to-action">
+            </div>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <img src="assets/banner1.png" alt="Random second slide">
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+
+  <div class="row row-2">
+    <div class="col-sm-12 col-md-4 subsection">
+      <img src="assets/webDevelopment-300x234.png" class="img-thumbnail" (click)="open(gloryCloudContent)"/>
+      <h5>Web Application Development</h5>
+      <p>With unmatched expertise and laser focus on JavaScript web app frameworks like Angular and React, we are uniquely positioned to create your custom web application.</p>
+      <button class="btn btn-primary" (click)="open(gloryCloudContent)">Learn More</button>
+    </div>
+    <div class="col-sm-12 col-md-4 subsection">
+      <img src="assets/mobile-app-development-300x263.png" class="img-thumbnail" (click)="open(propheticSignsContent)"/>
+      <h5>Mobile Application Development</h5>
+      <p>We utilize the latest in mobile development frameworks such as React Native and Ionic, to build apps for all mobile platforms. Our commitment to continuous delivery ensures that we are always working on high value features and working software for your business.</p>
+      <button class="btn btn-primary" (click)="open(propheticSignsContent)">Learn More</button>
+    </div>
+    <div class="col-sm-12 col-md-4 subsection">
+      <img src="assets/rest-apis-fig2-100602499-large.idge.png" class="img-thumbnail" (click)="open(americasJudgementContent)" />
+      <h5>API Development</h5>
+      <p>We have experience in a number of server-side technology stacks including Java Spring, Python Flask, and Javascript Express.js. Our focus on RESTful web services will allow us to build you a scalable and maintainable API that easily integrates with other systems.</p>
+      <button class="btn btn-primary" (click)="open(americasJudgementContent)">Learn More</button>
+    </div>
+    <!--<div class="col-sm-12 col-md-12 col-lg-3 hidden-sm-down events-container">-->
+      <!--<app-event *ngFor="let event of (events| slice:0:4)" eventDate={{event.start}} eventLabel={{event.title}}></app-event>-->
+    <!--</div>-->
+  </div>
+  <div class="row row-3">
+    <div class="col-sm-12 col-md-4 col-lg-3 subsection">
+      <img src="assets/online-biblestudy.jpg" class="img-thumbnail" />
+      <h5>Github link1</h5>
+      <p>We have online services available every day of the week including a weekly Sabbath Service on Blogtalk Radio and Ustream! Find out how you can get involved today...</p>
+      <a class="btn btn-primary" routerLink="/ministry">Read More</a>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-3 subsection">
+      <img src="assets/plague-preparation.jpg" class="img-thumbnail" />
+      <h5>Github link 2</h5>
+      <p>Prophet Deckard Prophesied the coming of this Worldwide Pandemic Long  before it was named H5N1, Avian Virus. Millions will die. Find out how to be protected...</p>
+      <a routerLink="/birdflu" class="btn btn-primary">Read More</a>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-3 subsection">
+      <img src="assets/endtime-messenger.jpg" class="img-thumbnail" />
+      <h5>Github link 3</h5>
+      <p>G-d has repeatedly sent His Prophets to warn America to repent. America has failed to take heed to the warnings until there is no remedy. Listen as the Prophet unfolds the forthcoming judgments...</p>
+      <a class="btn btn-primary" routerLink="/endtime">Read More</a>
+    </div>
+    <div class="col-sm-12 col-lg-3 hidden-md-down subsection">
+      <img src="assets/bible-study.jpg" class="img-thumbnail" />
+      <h5>Github link 4</h5>
+      <p>We have over 120 CD and DVD sets available for you to learn about G-d's everlasting covenant, the transition of the church, and where G-d's is taking the church today...</p>
+      <a routerLink="/cds" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+
+  <ng-template #gloryCloudContent let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">G-d's Glory Cloud</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img src="assets/anointing-cloud.gif" class="img-thumbnail" style="height: 22rem;display:block; margin: 0 auto 1rem auto;" />
+      <p>These pictures have been examined by experts proving their authenticity. When the cloud appears, all manner of
+        healings, miracles, salvation and deliverance comes to those who come in contact with the cloud. The cloud has
+        demonstrated the glory of G-d to such an extent that many of other religions fall on their faces and receive
+        Jesus as their L-rd and Savior.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
+
+  <ng-template #propheticSignsContent let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Prophetic Signs</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img src="assets/prophet-drawing.png" class="img-thumbnail" style="height: 22rem;display:block; margin: 0 auto 1rem auto;" />
+      <p>Bro. Deckard is a born again Jew that G-d has called to the office of the Prophet. He has established over 160
+        churches around the world.  G-d called him to be a Prophet sent to the nations and Bro. Deckard has prophesied
+        to leaders and nations throughout the world. A few of the Prophesies that G-d gave to Bro. Deckard which have
+        come to pass are as follows:
+      </p>
+      <ul>
+        <li>
+          Prophesied the coming the AIDs Epidemic&nbsp;2 years before it was discovered. He told the
+          people that the government would try to cover it up but in the end they would
+          have to reveal it.
+        </li>
+        <li>
+          Prophesied
+          that Prime Minister Sandiford of Barbados
+          would be resigning from office.
+        </li>
+        <li>
+          Prophesied
+          that the cold war would end and the Berlin Wall would be no more, 1
+          year before it took place. He also Prophesied that the threat during the cold
+          war was not Russia;
+          it would come from the Middle East.&nbsp;
+        </li>
+        <li>
+          Prophesied
+          that the
+          tornado activity in America would become greater than ever before known on
+          record.</li>
+        <li>
+          Prophesied
+          that old diseases
+
+
+
+          that the world thought had been eradicated
+
+          would return and
+          that they would become immune to our modern day medicines now being used.&nbsp;</li>
+        <li>
+          Prophesied the
+          flooding of the great Mississippi River 6 months before
+          it occurred.</li>
+        <li>
+          Prophesied the
+          coming of the first war with Iraq
+          [Desert Storm], and then prophesied that
+          America would have to go back and finish the
+          job at a later date.</li>
+        <li>
+          Prophesied the
+          beginning of the European Common Market and the struggle that they would have
+          accomplishing the task.</li>
+        <li>
+          Prophesied the events of 911 five years before it occurred.</li>
+        <li>
+          Prophesied
+          that the Islamic religion would become the fastest growing religion in the
+          United States. This was in 1990, and today it
+          is a known fact that this has come to pass.
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
+  <ng-template #americasJudgementContent let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">For America</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img src="assets/american-flag.jpg" class="img-thumbnail" style="height: 22rem;display:block; margin: 0 auto 1rem auto;" />
+      <p>This nation has become a stench in the nostrils of G-d and it is too late to turn His judgment back.
+        G-d’s spirit will no longer strive with America and America is in for a long, hard fall.
+        I realize this is not what people want to hear, but this is what the L-rd is saying.
+      </p>
+      <p style="font-style: italic; color: indianred;">
+        America, prepare thyself to receive the judgments of your G-d. I gave thee of the fatness of the land and put
+        strength within thee to overcome nations and kingdoms. But you now think that it was something that you have
+        done within yourselves to have accomplished these things. Woe unto you and your mighty men of valor. For I the
+        L-rd G-d shall bring to nought your strength and ability to overcome. It is I the L-rd G-d that does bring forth
+        kings and nations and it is I that tears them down.
+      </p>
+      <p style="font-style: italic; color: indianred;">
+        You have become an abomination to me. Your priests and seers
+        are as sleeping dogs that have refused to repent and seek me with a whole heart. They minister for their own gain.
+        I the L-rd G-d will bring them to nought and turn them over to believe a lie. I will cause the storms, earthquakes,
+        and floods to become stronger and more frequent. I will send a sword through the land and will cause families to be
+        at odds one to another, killing and being killed. Tumult will be throughout the land and your streets will run with
+        blood. </p>
+      <p style="font-style: italic; color: indianred;">Famine will I send in the land and you will watch as your children die from hunger. I tried over and over
+        again to reason with you o’ nation, but you would have me not. We will now see as you have thought to have become
+        your own god if you can deliver these people in their time of trouble. I will laugh at you and call you a foolish
+        nation. You have forsaken the Living G-d and I have now forsaken you. You will know in the end that I am the G-d
+        of Abraham, Isaac, and Jacob. I was in the beginning and so shall I be in the end.
+      </p>
+      <p>These are not things that are going to take place overnight. It will transpire very slowly as it already has;
+        seemingly as though there has been nothing take place. This nation has become accustomed to all the storms,
+        earthquakes, fires, floods, and everything else that the L-rd has sent to try to get the attention of the
+        church and this nation.
+      </p>
+      <p>
+        The days that lie ahead for the United States and the world are going to become very trying times.
+        The church is slipping deeper and deeper into a coma from which only a remnant will awaken. It is this remnant
+        that will do the great exploits in these last days.
+      </p>
+      <p>We must keep the faith and not be drawn into the snare that is now set for all mankind.</p>
+      <p style="font-weight: bold;">
+        The End Time Messenger
+      </p>
+      <p style="font-weight: bold;">
+        June/July 1994
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
+</div>

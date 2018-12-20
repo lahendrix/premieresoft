@@ -1,0 +1,110 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+.modal-content {
+  .modal-header {
+    background: #3465aa;
+    color: white; //white;
+  }
+
+  .modal-body {
+    padding: 1rem 2rem;
+  }
+
+  .close {
+    color: white;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse{
+  0%{-webkit-transform:scale(1)}
+  50%{-webkit-transform:scale(1.1)}
+  100%{-webkit-transform:scale(1)}
+}
+
+@-moz-keyframes pulse{
+  0%{-moz-transform:scale(1)}
+  50%{-moz-transform:scale(1.1)}
+  100%{-moz-transform:scale(1)}
+}
+
+@-o-keyframes pulse{
+  0%{-o-transform:scale(1)}
+  50%{-o-transform:scale(1.1)}
+  100%{-o-transform:scale(1)}
+}
+
+@keyframes pulse{
+   0%{transform:scale(1)}
+  50%{transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+
+.btn-primary {
+  background: $cradle-blue;
+  border: 1px solid $cradle-blue;
+  color: white;
+
+  &:hover {
+    background: $cradle-red;
+    border: 1px solid $cradle-red;
+    color: white;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -ms-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+  }
+}
+
+.call-to-action-btn {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  width: 15rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background: $cradle-red;
+  text-shadow: none;
+
+  &:hover {
+    text-decoration: none;
+    background: $cradle-blue;
+    color: white;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -o-animation-name: pulse;
+    animation-name: pulse;
+    animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -ms-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+  }
+}
+
+

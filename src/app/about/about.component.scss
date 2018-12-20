@@ -1,0 +1,18 @@
+.about-row
+{
+  margin: 24px 0 24px 0;
+
+  .about-col
+  {
+    font-size: 1rem;
+    font-family: "Source Sans Pro", Roboto;
+    background-color: transparent;
+    max-width: 1200px;
+
+    .about-img
+    {
+      display: block;
+      margin: auto;
+    }
+  }
+}
