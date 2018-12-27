@@ -25,52 +25,26 @@
 
   <div class="row row-2">
     <div class="col-sm-12 col-md-4 subsection">
-      <img src="assets/webDevelopment-300x234.png" class="img-thumbnail" (click)="open(gloryCloudContent)"/>
+      <img src="assets/webDevelopment-300x234.png" class="img-thumbnail" />
       <h5>Web Application Development</h5>
       <p>With unmatched expertise and laser focus on JavaScript web app frameworks like Angular and React, we are uniquely positioned to create your custom web application.</p>
-      <button class="btn btn-primary" (click)="open(gloryCloudContent)">Learn More</button>
+      <button class="btn btn-primary" >Learn More</button>
     </div>
     <div class="col-sm-12 col-md-4 subsection">
-      <img src="assets/mobile-app-development-300x263.png" class="img-thumbnail" (click)="open(propheticSignsContent)"/>
+      <img src="assets/mobile-app-development-300x263.png" class="img-thumbnail" />
       <h5>Mobile Application Development</h5>
       <p>We utilize the latest in mobile development frameworks such as React Native and Ionic, to build apps for all mobile platforms. Our commitment to continuous delivery ensures that we are always working on high value features and working software for your business.</p>
-      <button class="btn btn-primary" (click)="open(propheticSignsContent)">Learn More</button>
+      <button class="btn btn-primary" >Learn More</button>
     </div>
     <div class="col-sm-12 col-md-4 subsection">
-      <img src="assets/rest-apis-fig2-100602499-large.idge.png" class="img-thumbnail" (click)="open(americasJudgementContent)" />
+      <img src="assets/rest-apis-fig2-100602499-large.idge.png" class="img-thumbnail" />
       <h5>API Development</h5>
       <p>We have experience in a number of server-side technology stacks including Java Spring, Python Flask, and Javascript Express.js. Our focus on RESTful web services will allow us to build you a scalable and maintainable API that easily integrates with other systems.</p>
-      <button class="btn btn-primary" (click)="open(americasJudgementContent)">Learn More</button>
+      <button class="btn btn-primary" >Learn More</button>
     </div>
     <!--<div class="col-sm-12 col-md-12 col-lg-3 hidden-sm-down events-container">-->
       <!--<app-event *ngFor="let event of (events| slice:0:4)" eventDate={{event.start}} eventLabel={{event.title}}></app-event>-->
     <!--</div>-->
-  </div>
-  <div class="row row-3">
-    <div class="col-sm-12 col-md-4 col-lg-3 subsection">
-      <img src="assets/online-biblestudy.jpg" class="img-thumbnail" />
-      <h5>Github link1</h5>
-      <p>We have online services available every day of the week including a weekly Sabbath Service on Blogtalk Radio and Ustream! Find out how you can get involved today...</p>
-      <a class="btn btn-primary" routerLink="/ministry">Read More</a>
-    </div>
-    <div class="col-sm-12 col-md-4 col-lg-3 subsection">
-      <img src="assets/plague-preparation.jpg" class="img-thumbnail" />
-      <h5>Github link 2</h5>
-      <p>Prophet Deckard Prophesied the coming of this Worldwide Pandemic Long  before it was named H5N1, Avian Virus. Millions will die. Find out how to be protected...</p>
-      <a routerLink="/birdflu" class="btn btn-primary">Read More</a>
-    </div>
-    <div class="col-sm-12 col-md-4 col-lg-3 subsection">
-      <img src="assets/endtime-messenger.jpg" class="img-thumbnail" />
-      <h5>Github link 3</h5>
-      <p>G-d has repeatedly sent His Prophets to warn America to repent. America has failed to take heed to the warnings until there is no remedy. Listen as the Prophet unfolds the forthcoming judgments...</p>
-      <a class="btn btn-primary" routerLink="/endtime">Read More</a>
-    </div>
-    <div class="col-sm-12 col-lg-3 hidden-md-down subsection">
-      <img src="assets/bible-study.jpg" class="img-thumbnail" />
-      <h5>Github link 4</h5>
-      <p>We have over 120 CD and DVD sets available for you to learn about G-d's everlasting covenant, the transition of the church, and where G-d's is taking the church today...</p>
-      <a routerLink="/cds" class="btn btn-primary">Read More</a>
-    </div>
   </div>
 
   <ng-template #gloryCloudContent let-c="close" let-d="dismiss">

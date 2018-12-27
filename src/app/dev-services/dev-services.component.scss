@@ -1,0 +1,21 @@
+.dev-services {
+  padding-top: 1rem;
+
+  .subsection {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    img {
+      height: 200px;
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+  }
+}

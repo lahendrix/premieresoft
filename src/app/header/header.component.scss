@@ -113,13 +113,6 @@
   overflow: hidden;
 }
 
-//@include media-breakpoint-down(sm) {
-//  .home .row-1 .carousel-img {
-//    width: initial;
-//  }
-//}
-
-
 @media (min-width: 768px) {
   .navbar-toggleable-sm, .navbar-toggleable-sm .navbar-nav {
     -webkit-box-orient: horizontal;
